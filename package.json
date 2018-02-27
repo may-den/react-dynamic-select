@@ -1,0 +1,44 @@
+{
+  "name": "react-dynamic-select",
+  "version": "1.5.0",
+  "description": "React-Select with added functionality to display as radios/checkboxes depending on how many options are provided",
+  "main": "dist/index.js",
+  "repository": "https://github.com/liamjcrewe/react-dynamic-select",
+  "author": "liamjcrewe",
+  "license": "Unlicense",
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "IE 9"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-cli": "^6.26.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-select": "^1.2.1",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "build": "babel index.js > dist/index.js",
+    "prepublishOnly": "babel index.js > dist/index.js"
+  }
+}
