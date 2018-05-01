@@ -41,7 +41,8 @@ var DynamicSelect = function DynamicSelect(_ref) {
         return _onChange(multiple ? selected.map(function (item) {
           return item.value;
         }) : selected.value);
-      }
+      },
+      closeOnSelect: !multiple
     }, selectProps));
   }
 
