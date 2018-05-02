@@ -10,7 +10,7 @@ const DynamicSelect = ({ cutoff, inputProps, items, labelProps, multiple, name, 
         options={items}
         value={value}
         multi={multiple}
-        onChange={selected => onChange(multiple ? selected.map(item => item.value) : selected.value)}
+        onChange={selected => onChange(multiple ? selected.map(item => item.value) : selected && selected.value)}
         closeOnSelect={!multiple}
         {...selectProps}
       />
