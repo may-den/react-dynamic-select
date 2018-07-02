@@ -39,6 +39,7 @@ const DynamicSelect = ({ cutoff, inputProps, items, labelProps, multiple, name, 
         type='radio'
         name={name}
         value={item.value}
+        checked={value === item.value}
         onChange={_ => onChange(item.value)}
         {...inputProps}
       /> {item.label}
