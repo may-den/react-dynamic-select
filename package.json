@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-select",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "React-Select with added functionality to display as radios/checkboxes depending on how many options are provided",
   "main": "dist/index.js",
   "repository": "https://github.com/liamjcrewe/react-dynamic-select",
