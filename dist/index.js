@@ -75,6 +75,7 @@ var DynamicSelect = function DynamicSelect(_ref) {
         type: 'radio',
         name: name,
         value: item.value,
+        checked: value === item.value,
         onChange: function onChange(_) {
           return _onChange(item.value);
         }
