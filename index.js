@@ -19,31 +19,35 @@ const DynamicSelect = ({ cutoff, inputProps, items, labelProps, multiple, name, 
 
   if (multiple) {
     return items.map((item, index) =>
-      <label key={index} {...labelProps}>
-        <input
-          type='checkbox'
-          name={name}
-          checked={value.includes(item.value)}
-          onChange={event =>
-            event.target.checked ? onChange(value.concat(item.value)) : onChange(value.filter(x => x !== item.value))
-          }
-          {...inputProps}
-        /> {item.label}
-      </label>
+      <div>
+        <label key={index} {...labelProps}>
+          <input
+            type='checkbox'
+            name={name}
+            checked={value.includes(item.value)}
+            onChange={event =>
+              event.target.checked ? onChange(value.concat(item.value)) : onChange(value.filter(x => x !== item.value))
+            }
+            {...inputProps}
+          /> {item.label}
+        </label>
+      </div>
     )
   }
 
   return items.map((item, index) =>
-    <label key={index} {...labelProps}>
-      <input
-        type='radio'
-        name={name}
-        value={item.value}
-        checked={value === item.value}
-        onChange={_ => onChange(item.value)}
-        {...inputProps}
-      /> {item.label}
-    </label>
+    <div>
+      <label key={index} {...labelProps}>
+        <input
+          type='radio'
+          name={name}
+          value={item.value}
+          checked={value === item.value}
+          onChange={() => onChange(item.value)}
+          {...inputProps}
+        /> {item.label}
+      </label>
+    </div>
   )
 }
 
