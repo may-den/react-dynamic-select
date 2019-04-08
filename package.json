@@ -4,7 +4,7 @@
   "description": "React-Select with added functionality to display as radios/checkboxes depending on how many options are provided",
   "main": "dist/index.js",
   "repository": "https://github.com/liamjcrewe/react-dynamic-select",
-  "author": "liamjcrewe",
+  "author": "may-den",
   "license": "Unlicense",
   "babel": {
     "presets": [
