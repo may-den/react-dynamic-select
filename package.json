@@ -35,8 +35,8 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-select": "^1.2.1",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-select": "^1.2.1"
   },
   "scripts": {
     "build": "babel index.js > dist/index.js",
